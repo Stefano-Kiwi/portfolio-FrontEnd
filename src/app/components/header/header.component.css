@@ -1,0 +1,17 @@
+p.subt{
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+#nombre{
+    font-size: 70px;
+}
+
+
+#base{
+    background: url("/../assets/images/header-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
