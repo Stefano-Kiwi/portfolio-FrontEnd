@@ -1,6 +1,7 @@
 .navbar {
   backdrop-filter: blur(20px);
   background-color: transparent;
+  position: fixed;
 }
 li{
   color:white;

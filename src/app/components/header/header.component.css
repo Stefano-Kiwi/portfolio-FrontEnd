@@ -1,7 +1,16 @@
-p.subt{
+.row{
+    padding-top:40px;
     font-size: 24px;
+}
+p.sup{
+    line-height: 0px;
     font-weight: 700;
-    
+    color: orange;
+}
+p.inf{
+    line-height: 40px;
+    font-weight: 700;
+    color: orange;
 }
 #nombre{
     font-size: 70px;
@@ -12,6 +21,6 @@ p.subt{
     background: url("/../assets/images/header-wallpaper.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
