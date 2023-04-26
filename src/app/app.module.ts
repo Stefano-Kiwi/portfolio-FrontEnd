@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { WeatherComponent } from './components/weather/weather.component';
+import { StartingPageComponent } from './components/starting-page/starting-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { WeatherComponent } from './components/weather/weather.component';
     HeaderComponent,
     AboutComponent,
     ProjectsComponent,
-    WeatherComponent
+    WeatherComponent,
+    StartingPageComponent
   ],
   imports: [
     BrowserModule,
