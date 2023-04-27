@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 200px;
+  }
+  
+  .wrapper {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-top: 0;
+  }
+  
+  button {
+    margin-top: 20px;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #ff9f9f;
+  }

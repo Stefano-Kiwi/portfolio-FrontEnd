@@ -10,6 +10,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { WeatherComponent } from './components/weather/weather.component';
 import { StartingPageComponent } from './components/starting-page/starting-page.component';
+import { PagError404Component } from './components/pag-error404/pag-error404.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { StartingPageComponent } from './components/starting-page/starting-page.
     AboutComponent,
     ProjectsComponent,
     WeatherComponent,
-    StartingPageComponent
+    StartingPageComponent,
+    PagError404Component
   ],
   imports: [
     BrowserModule,
