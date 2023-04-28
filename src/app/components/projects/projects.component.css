@@ -1,0 +1,27 @@
+.container {
+  max-width: 1200px;
+  margin: 0;
+  color:black;
+  margin-top: 100px;
+}
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  align-items: flex-start;
+}
+.card {
+  width: 30%; /* Tamaño card */
+  margin: 2%; /* Distancia entre las cards */
+  align-items: center;
+  max-width: 100%;
+}
+
+.card-img-top {
+  max-width: 50%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  margin-top: 25px;
+}
