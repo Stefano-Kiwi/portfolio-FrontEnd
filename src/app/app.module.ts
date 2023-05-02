@@ -15,6 +15,9 @@ import { WeatherComponent } from './components/weather/weather.component';
 import { StartingPageComponent } from './components/starting-page/starting-page.component';
 import { PagError404Component } from './components/pag-error404/pag-error404.component';
 import { LoginComponent } from './components/login/login.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { LoginComponent } from './components/login/login.component';
     WeatherComponent,
     StartingPageComponent,
     PagError404Component,
-    LoginComponent
+    LoginComponent,
+    ExperienceComponent,
+    EducationComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
