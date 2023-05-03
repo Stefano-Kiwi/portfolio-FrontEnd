@@ -1,8 +1,18 @@
-#info{
-    padding-top: 200px;
-    padding-bottom: 200px;
+.row{
+    padding: 20px;
+    margin-top: 200px;
 }
-img{
-    padding-top: 20px;
-    padding-right: 10px;
+div{
+    text-align:center;
+}
+#fotodeperfil{
+    position: absolute;
+    width: 15%;
+    box-shadow: 3px 3px 3px grey;
+    left: 3%;
+    border-radius: 30%;
+}
+#nombre{
+    font-weight: bold;
+    margin-top: 30%;
 }
