@@ -19,6 +19,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { interceptorProvider } from './service/interceptor-service';
+import { NgCircleProgressModule } from 'ng-circle-progress';    // Importante para skills.
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,25 @@ import { interceptorProvider } from './service/interceptor-service';
     AppRoutingModule,
     HttpClientModule, // Para que funcione backend y api del clima
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgCircleProgressModule.forRoot({
+      "radius": 60,
+      "space": -10,
+      "outerStrokeGradient": true,
+      "outerStrokeWidth": 10,
+      "outerStrokeColor": "#4882c2",
+      "outerStrokeGradientStopColor": "#53a9ff",
+      "innerStrokeColor": "#e7e8ea",
+      "innerStrokeWidth": 10,
+      "title": "UI",
+      "animateTitle": false,
+      "animationDuration": 1000,
+      "showUnits": false,
+      "showBackground": false,
+      "clockwise": false,
+      "startFromZero": false,
+      "lazy": true
+    })
   ],
    exports: [
     ProjectsComponent
