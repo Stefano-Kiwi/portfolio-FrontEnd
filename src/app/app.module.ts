@@ -18,6 +18,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { interceptorProvider } from './service/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -37,14 +38,16 @@ import { SkillsComponent } from './components/skills/skills.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule, // Para que funcione el API para ver el clima
+    HttpClientModule, // Para que funcione backend y api del clima
     FormsModule,
     ReactiveFormsModule
   ],
    exports: [
     ProjectsComponent
    ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

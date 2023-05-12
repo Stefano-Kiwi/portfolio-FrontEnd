@@ -1,56 +1,45 @@
-<form [formGroup]="form"  (ngSubmit)="onEnviar($event)">    
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
 
-    <div>
-        <label for="username">Username: </label>                          
-        <input type="username" formControlName="username">
-    </div>
-    <!-- Gracias al getter que configuramos en el controlador -->
-    <div *ngIf="Username?.errors  && Username?.touched">    
-        <p *ngIf="Username?.hasError('required')" class="error">
-            El nombre de usuario es requerido.
-        </p>
-        <p *ngIf="Username?.errors?.['minlength']" class="error">
-            El nombre de usuario debe tener entre 8 y 12 caracteres.
-          </p>
-    </div>
+            <div class="mb-md-5 mt-md-4 pb-5">
 
-    <br/>
-    <div>
-        <label for="email">Email: </label>                          
-        <input type="email" formControlName="email">
-    </div>
-    <!-- Gracias al getter que configuramos en el controlador -->
-    <div *ngIf="Mail?.errors  && Mail?.touched">    
-        <p *ngIf="Mail?.hasError('required')" class="error">
-            El email es requerido.
-        </p>
-        <p *ngIf="Mail?.hasError('email')" class="error">
-            El formato del email debe ser válido.
-          </p>
-    </div>
+              <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+              <p class="text-white-50 mb-5">Por favor, ingresar usuario y clave</p>
 
-    <br/>
-    <div>
-        <label for="exampleInputPassword1" class="form-label">Password: </label>
-        <input type="password" formControlName="password" [class.border-danger]="MailValid">
+              <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg"
+                    [(ngModel)]="nombreUsuario" required />
+                  <label class="form-label" for="nombreUsuario">Usuario</label>
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                  <input type="password" id="password" name="password" class="form-control form-control-lg" [(ngModel)]="password"
+                    required />
+                  <label class="form-label" for="password">Password</label>
+                </div>
+
+                <!-- <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p> -->
+
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+
+              </form>
+
+            </div>
+
+            <div>
+              <p class="mb-0">¿No tienes una cuenta? <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Gracias al getter que configuramos en el controlador -->
-    <div *ngIf="Password?.errors  && Password?.touched">
-    <p *ngIf="Password?.hasError('required')" class="error">
-      El password es requerido.
-    </p>
-    <p *ngIf="Password?.errors?.['minlength']" class="error">
-      El password debe ser de 8 o más caracteres.
-    </p>
   </div>
-    <br/>
-    <div>
-        <button   type="submit">Iniciar Sesión</button>
-    </div>
-</form>
-
-<div>
-  <p>Un debuger para mostrar que es posible hacer un biding directo al formulario <strong>{{form.value.email}} </strong><strong>{{form.value.password}} </strong><p> 
-<br>
-
-</div>
+</section>

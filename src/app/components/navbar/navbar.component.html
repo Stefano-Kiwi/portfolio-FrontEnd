@@ -15,10 +15,11 @@
           <a class="nav-link" routerLink="/proyectos" href="#">Proyectos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Modo edición</a>
+          <a class="nav-link" routerLink="/login" href="#" *ngIf="!isLogged">Modo edición</a>
         </li>
       </ul>
     </div>
+    <a class="btn btn-outline-warning ml-auto" download style="padding-right:20px" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</a>
     <a class="btn btn-outline-warning ml-auto" href="assets/curriculum.pdf" download style="padding-right:20px">Descargar CV</a>
   </div>
 </nav>
