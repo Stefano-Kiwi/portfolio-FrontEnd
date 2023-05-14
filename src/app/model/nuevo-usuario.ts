@@ -5,3 +5,5 @@ export class NuevoUsuario {
     password!: string;
     authorities!: string[];
 }
+
+// FALTA IMPLEMENTAR EN UN COMPONENTE.
