@@ -15,11 +15,13 @@ import { WeatherComponent } from './components/weather/weather.component';
 import { StartingPageComponent } from './components/starting-page/starting-page.component';
 import { PagError404Component } from './components/pag-error404/pag-error404.component';
 import { LoginComponent } from './components/login/login.component';
-import { ExperienceComponent } from './components/experience/experience.component';
+import { ExperienciaComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { interceptorProvider } from './service/interceptor-service';
-import { NgCircleProgressModule } from 'ng-circle-progress';    // Importante para skills.
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { NewExperienciaComponent } from './components/experience/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experience/edit-experiencia.component'; 
 
 
 @NgModule({
@@ -33,9 +35,11 @@ import { NgCircleProgressModule } from 'ng-circle-progress';    // Importante pa
     StartingPageComponent,
     PagError404Component,
     LoginComponent,
-    ExperienceComponent,
+    ExperienciaComponent,
     EducationComponent,
-    SkillsComponent
+    SkillsComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,

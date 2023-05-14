@@ -1,6 +1,11 @@
 .row{
+    color:black;
     margin-top: 100px;
     padding:30px;
+    background-color: #f9b66d;
+}
+h1{
+    text-align:center;
 }
 ul{
     padding-top:30px;

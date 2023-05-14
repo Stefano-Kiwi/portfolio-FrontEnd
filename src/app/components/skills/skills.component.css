@@ -2,7 +2,9 @@
     background-color: orange;
     padding: 20px;
 }
-
+h1{
+    text-align:center;
+}
 .circulo{
     display: flex;
     flex-direction: column;
