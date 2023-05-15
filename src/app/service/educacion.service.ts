@@ -7,7 +7,8 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-  URL = 'https://backstefano.onrender.com/educacion/';
+  //URL = 'http://localhost:8080/educacion/';
+  URL = 'https://portfolio-stefano-kiwi.koyeb.app/educacion/';
 
   constructor(private httpClient : HttpClient) { }
 

@@ -9,7 +9,8 @@ import { JwtDto } from '../model/jwt-dto';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://backstefano.onrender.com/auth/';
+  //authURL = 'http://localhost:8080/auth/';
+  authURL = 'https://portfolio-stefano-kiwi.koyeb.app/auth/';
 
   constructor(private httpClient: HttpClient) { }
   

@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = 'https://backstefano.onrender.com/personas/';
+  //URL = 'http://localhost:8080/personas/';
+  URL = 'https://portfolio-stefano-kiwi.koyeb.app/personas/';
   constructor(private http: HttpClient) { 
 
     }

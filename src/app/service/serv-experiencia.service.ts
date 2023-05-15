@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ServExperienciaService {
-  expURL = 'https://backstefano.onrender.com/explab/'
+  //expURL = 'http://localhost:8080/explab/';
+  expURL = 'https://portfolio-stefano-kiwi.koyeb.app/explab/'
 
   constructor(private httpClient: HttpClient) { }
 
