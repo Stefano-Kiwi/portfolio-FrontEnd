@@ -7,7 +7,7 @@ import { catchError, map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class WeatherServiceService {
-  private apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
+  private apiUrl = 'https://api.openweathermap.org/data/2.5/weather';   // Voy a implementarlo más adelante en la web, pero funciona la API.
   private apiKey = 'd6eb4be5ec93e863d6642a520c69d27a';
 
   constructor(private http: HttpClient) { }

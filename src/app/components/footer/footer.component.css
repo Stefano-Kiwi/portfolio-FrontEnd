@@ -1,0 +1,8 @@
+.row{
+    padding-left: 40px;
+    padding-top: 20px;
+    margin-top:100px;
+    background: url("/assets/images/blue_light_flow_background.jpg");
+    /*background-color: rgb(100,150,255); */
+    color: white;
+}
